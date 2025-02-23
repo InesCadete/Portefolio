@@ -3,11 +3,6 @@
 ## **Overview**
 📂 **Portfolio Website** built using **HTML, CSS, JS**.
 
-## **Tech Stack** 🛠️
-[![HTML](https://img.shields.io/badge/html5%-%23E34F26.svg?&styl20e=for-the-badge&logo=html5&logoColor=white)](https://github.com/sohez/sohez.github.io/search?l=html)&nbsp;
-[![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)](https://github.com/sohez/sohez.github.io/search?l=css)&nbsp;
-[![JavaScript](https://img.shields.io/badge/javascript%20-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black)](https://github.com/sohez/sohez.github.io/search?l=javascript)&nbsp;
-
 ---
 
 ## **Features** ✨
