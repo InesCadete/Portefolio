@@ -16,4 +16,4 @@
 - ⚡ **Fast Loading** – Optimized for speed.
 
 ## **📬 Contact**
-Feel free to reach out to me through the following platforms:
+ines.cadete@tecnico.ulisboa.pt
