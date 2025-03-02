@@ -4,18 +4,19 @@ const typingText = document.querySelector("#typing-text");
 const cursorSpan = document.querySelector("#cursor");
 
 const texts = [
-  "Web Designer",
-  "Video Editor",
-  "Blogger",
-  "Content Writer",
-  "Android Developer",
-  "YouTuber",
+  "Problem Solver",
+  "Computer Science Enthusiast",
+  "Web Developer",
+  "Team Player",
+  "Project Developer",
+  "Presentation Specialist",
+  "Management Explorer"
 ];
 
-const typingDelay = 200;
-const erasingDelay = 200;
-const newTextDelay = 1000;
-const textHoldingDelay = 1000;
+const typingDelay = 100;
+const erasingDelay = 100;
+const newTextDelay = 500;
+const textHoldingDelay = 500;
 
 const wait = (time) => {
   return new Promise((resolve, reject) => {

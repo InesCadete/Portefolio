@@ -1,10 +1,11 @@
 const ProjectsData = [
   {
-    name: "Mcodo :Learn Coding with AI",
+    name: "Excel Clone-logic",
     logo: "https://play-lh.googleusercontent.com/au3QvRNWZiRamIYLRb0irFPno-xuzSJDzrL1Te0vGx7889ROiOp3Sr7dIByGomFDJpbX=w480-h960-rw",
     description:
-      "Powerful code compiler, AI chat assistant, interactive coding quizzes, and chapter-based learning resources.",
-    link: "https://play.google.com/store/apps/details?id=com.sohezsoft.mcodo&hl=en_IN",
+  
+    "using a grid of cells that can represent values for mathematical expressions. implemented the Observer Design pattern, which made it possible for cells to update when changes were made to cells that influenced the result." ,
+      link: "https://github.com/InesCadete/Computer-Science-IST/tree/main/PO",
   },
   {
     name: "Student Portal App",

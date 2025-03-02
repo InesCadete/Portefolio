@@ -10,7 +10,9 @@
   --color-text: #fff;
   --color-text-gray: #d0d0d0;
   --color-background: #13071f;
-  --color-primary: #9900ff;
+  /* --color-primary: #9900ff; */
+  --color-primary:   #5ef0f7;
+  
   --color-highlight: #9900ff5f;
 }
 
@@ -478,6 +480,7 @@ footer #setting-card span {
 }
 footer #setting-card div:nth-child(1) span:nth-child(1) {
   background: conic-gradient(#13071f 50%, #9900ff 50%); /* Two colors */
+
 }
 footer #setting-card div:nth-child(1) span:nth-child(2) {
   background: conic-gradient(#1C1C1E 50%, #FF6F61 50%); /* Two colors */

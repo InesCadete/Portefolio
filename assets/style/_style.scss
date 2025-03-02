@@ -25,7 +25,10 @@
 
   // theme 1
   --color-background: #13071f;
-  --color-primary: #9900ff;
+  // --color-primary: #9900ff;
+  // --color-primary: #9900ff;
+  --color-primary: #5ef0f7;
+
   --color-highlight: #9900ff5f;
   // // theme 2
   // --color-background: #1C1C1E;
@@ -207,6 +210,32 @@ main #hero-section {
       margin-top: 30px;
     }
   }
+//////////////////////////////////////////////////////////////
+  #about-ring {
+    border-radius: 50%;
+    outline: 1px solid var(--color-primary); /* Change color */
+    padding: 5px; /* Smaller padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+  }
+  
+  #about-ring:hover {
+    padding: 10px; /* Slightly bigger on hover */
+    outline: 3px solid var(--color-primary); /* Thicker on hover */
+  }
+  
+  #about-ring img {
+    height: 80px; /* Adjust as needed */
+    width: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    -webkit-box-shadow: -1px -1px 40px -10px rgb(255, 0, 247);
+    -moz-box-shadow: -1px -1px 40px -10px rgb(255, 0, 247);
+    box-shadow: -1px -1px 40px -10px rgb(255, 0, 247);
+  }
+  //////////////////////////////////////////////////////////////
 
   /* Extra small devices (phones, <576px) */
   @media (max-width: 575.98px) {
@@ -512,7 +541,10 @@ footer {
     }
     div:nth-child(1){
       span:nth-child(1){
-        background: conic-gradient(#13071f 50%, #9900ff 50%); /* Two colors */
+        // background: conic-gradient(#13071f 50%, #9900ff 50%); 
+        background: conic-gradient(#13071f 50%, #5ef0f7 50%); /* Two colors */
+
+        
       }
       span:nth-child(2){
         background: conic-gradient(#1C1C1E 50%, #FF6F61 50%); /* Two colors */

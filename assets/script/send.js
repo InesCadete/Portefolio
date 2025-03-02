@@ -18,7 +18,9 @@ async function setEmail() {
   const email = document.getElementById("Email").value.trim();
   const message = document.getElementById("Message").value.trim();
   const emailUrl =
-    "https://script.google.com/macros/s/AKfycbwkjI7POBip0D3idUWfZwmdN4bV9TPfkfUWLwWZbu_rxDWSM5_F5VI1jVAXCKlRt0ykAg/exec";
+    "https://script.google.com/macros/s/AKfycbwm8zUz8Xb7euj7gsjsBNlK-TQ2GAnAuujB0UWqTEYzW6jPzvv8_yTiD8BtQSR9qC2o/exec"
+
+
 
   if (!email || !message) {
     responseText.innerText = "Please fill both the fields.";
