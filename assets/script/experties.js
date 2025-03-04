@@ -46,11 +46,6 @@ const ExpertiseData = [
   },
 
   {
-    name: "Assembly",
-    logo: "  https://user-images.githubusercontent.com/103866722/194773833-8571f323-4fa8-4036-a51c-57b9d29c683b.svg",
-  },
-
-  {
     name: "Prolog",
     logo: "  https://static-00.iconduck.com/assets.00/file-type-prolog-icon-2048x2048-3vfnh6jh.png",
   },
@@ -60,10 +55,7 @@ const ExpertiseData = [
     name: "Linux",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
   },
-  {
-    name: "Windows",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg",
-  },
+  
   {
     name: "Docker",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
