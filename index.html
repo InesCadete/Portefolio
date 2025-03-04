@@ -82,9 +82,9 @@
       <section id="hero-section">
         <div id="hero-left">
         <br />
-        <h1>INÊS <br /><span>CADETE</span></h1>
+        <h1 style="font-size: 5vw;">INÊS <br /><span>CADETE</span></h1>
         <span>
-          <span id="typing-text">Problem solver</span>
+            <span id="typing-text" style="font-size: 2vw;">Problem solver</span>
           <span id="cursor"></span>
         </span>
         </div>
@@ -95,29 +95,27 @@
             class="bright-img"
 
             src="images/profile_pic.jpg"
-            alt="Inês Cadete"
-
-          />
+            alt="Inês Cadete"/>
         </a>
           </div>
         </div>
       </section>
-      <section id="about-section" style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <section id="about-section" style="text-align: center; max-width: 72%; margin: 0 auto;">
         <article>
-          <h2 style="margin-bottom: 20px;">About Me</h2>
+          <h2 style="margin-bottom: 4%;">About Me</h2>
           <p>
-        I'm Inês Cadete, a Computer Science student with a passion for
-        <span>problem-solving</span> and
-        <span>crafting smart, real-world solutions</span>. With a background in both <span>technology and management,</span>
+        I'm Inês Cadete, a Computer Science student <a href="https://www.linkedin.com/school/ist/posts/?feedView=all" target="_blank" style="color: #5ef0f7;">@Técnico</a> with a passion for
+        <span>challenges</span> and
+        <span>problem-solving</span>. With a background in both <span>technology and management,</span>
          I thrive on defining complex problems and turning them into clear, effective solutions. 
-         Whether you're looking to optimize a business process or bring a fresh perspective to a challenge, I’m here to help turn ideas into impact! 
+         Whether you're looking to optimize a business process or bring a fresh perspective to a challenge, I'm here to help turn ideas into impact! 
           </p>
+        </section>
 
-          <ul style="list-style: none; padding: 0;">
-        <li>
-          <section id="learned-section">
-            <h2 id="animated-text">-------------------------------------</h2>
-            
+          <section id="education-section">
+            <h2 id="animated-text" style="text-align: center;">-----------------------------------------</h2>
+          </section>
+
             <script>
               document.addEventListener("DOMContentLoaded", function () {
                 const textElement = document.getElementById("animated-text");
@@ -134,7 +132,6 @@
                   }
                 }
 
-                // Function to check if the section is in view (on scroll)
                 function checkIfInView() {
                   const rect = textElement.getBoundingClientRect();
                   if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
@@ -143,53 +140,43 @@
                     window.removeEventListener("scroll", checkIfInView); // Remove the scroll listener after animation starts
                   }
                 }
-
-                // Add scroll event listener
                 window.addEventListener("scroll", checkIfInView);
               });
             </script>
-
-          <h2>Where I learned</h2>
-          <h3 style="margin-bottom: 25px; margin-top: 40px;"">->  Computer Science  <-</h3>
+          <section id="education-section">
+          <h2>Where I learnt</h2>
+          <h3 style="margin-bottom: 35px; margin-top: 60px;"">->>  Computer Science  <<-</h3>
       
-
             <a href="https://fenix.tecnico.ulisboa.pt/cursos/leic-t" target="_blank" style="float: right; margin-left: 10px;">
-              <img class="bright-img" src="images/ist_logo.png" alt="IST Logo" style="width: 40%;" />
+              <img class="bright-img" src="images/ist_logo.png" alt="IST Logo" style="width: 45%;" />
             </a>
             <p style="margin-bottom: 20px; margin-top: 20px;">
               The foundation of <span>conceptual thinking</span> through working on projects and learning the essentials on how computers and information systems work.
             </p>
             
-            <h3 style="margin-bottom: 15px; margin-top: 50px;">->  Business and Management  <-</h3>
-            <div class="education-section" style="display: flex; align-items: center;"></div>
+            <h4 style="margin-bottom: 25px; margin-top: 90px; ">->>  Business and Management  <<-</h4>
+            <!-- <div class="education-section" style="display: flex; align-items: center;"></div> -->
               <a href="https://www.iscte-iul.pt/curso/codigo/0391/licenciatura-tecnologias-digitais-gestao" target="_blank">
-              <img class="bright-img" src="images/iscte_logo.png" alt="ISCTE Logo" style="width: 25%; margin-right: 10px;" />
+              <img class="bright-img" src="images/iscte_logo.png" alt="ISCTE Logo" style="width: 15%; margin-right: 10px;" />
               </a>
               <a href="https://www.aese.pt/aese-summer-school/" target="_blank">
-              <img class="bright-img" src="images/aese_logo.png" alt="AESE Logo" style="width: 25%; margin-right: 10px;" />
+                <img class="bright-img" src="images/aese_logo.png" alt="AESE Logo" style="width:15%; margin-right: 10px; filter: invert(52%) sepia(100%) saturate(998%) hue-rotate(340deg) brightness(94%) contrast(97%); position: relative; top: -35px;" />
               </a>
-              <p style="margin-bottom: 30px; margin-top: 40px;"></p>
-              Contents learned about management in ISCTE-Sintra were tested in practice in the analysis and teamwork business case solving in AESE, using the <span>Harvard Business case</span> model.
+              <p style="margin-bottom: 20px; margin-top: 20px;">
+              Contents learnt about management in ISCTE were tested in practice in the analysis and teamwork business case solving in AESE, using the <span>Harvard Business case</span> model.
               </p>
+            </section>
 
-            </div>
-          </div>
-          </section>
-        </li>
-          </ul>
         </article>
           
-      </section>
       <section id="skills-section">
         <h2 style="margin-bottom: 30px;">Skills</h2>
         <div id="skills-card-container">
-          <!-- code from dynamically ./assets/script/experties.js -->
         </div>
       </section>
       <section id="projects-section">
         <h2 style="margin-bottom: 30px;" >Projects</h2>
         <div id="projects-card-container">
-          <!-- code from dynamically ./assets/script/projects.js -->
         </div>
       </section>
     </main>
@@ -261,25 +248,5 @@
     <script src="./assets/script/send.js"></script>
     <script src="./assets/script/typeing.js"></script>
 
-    <!-- For seo dont think about
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Person",
-        "name": "Inês Cadete",
-        "url": "https://sohez.github.io/",
-        "image": "https://avatars.githubusercontent.com/u/57430072?v=4",
-        "sameAs": [
-          "https://www.instagram.com/sohel_code.py/",
-          "https://github.com/sohez",
-          "https://sohez.github.io/"
-        ],
-        "jobTitle": "Founder",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Sohezsoft"
-        }
-      }
-    </script> -->
   </body>
 </html>

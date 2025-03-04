@@ -319,31 +319,100 @@ main #hero-section #hero-right img {
 /*--------------------------------------------------------------
   # about section
   --------------------------------------------------------------*/
-main #about-section {
-  max-width: 80%;
-  margin: auto;
+/*--------------------------------------------------------------
+  # about section (Scalable)
+  --------------------------------------------------------------*/
+  main #about-section {
+    max-width: clamp(600px, 90%, 1200px); /* Increased width scaling */
+    margin: auto;
+    padding: 2rem; /* Adds spacing for better proportion */
+  }
+
+  main #about-section h2 {
+    margin: 1rem 0;
+    font-size: clamp(1.8rem, 2.5vw, 3rem); /* Scales based on viewport */
+  }
+
+  main #about-section p {
+    font-size: clamp(1rem, 1.3vw, 1.6rem); /* Responsive font */
+    line-height: 1.8; /* Improves readability */
+    color: var(--color-text-gray);
+    max-width: 100%; /* Prevents excessive stretching */
+    margin: 0 auto; /* Centers text */
+  }
+
+  main #about-section p span {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+
+  main #about-section li {
+    margin: 1.5rem 0 1.2rem;
+    line-height: 1.8;
+    font-size: clamp(1rem, 1.3vw, 1.6rem); /* Scales dynamically */
+    color: var(--color-text-gray);
+  }
+  
+  main #about-section li b {
+    color: var(--color-text);
+  }
+  
+
+
+
+/*----------------------------------------------------------------
+#education section
+----------------------------------------------------------------*/
+
+#education-section {
+  max-width: 1300px; /* Limits width on large screens */
+  margin: 0 auto; /* Centers content */
+  padding: 1px;
+  text-align: center;
 }
-main #about-section h2 {
-  margin: 12px 0px 12px;
-  font-size: var(--font-size-heading);
+
+#education-section h2,
+#education-section h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2.8rem); /* Responsive font sizes */
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
-main #about-section p {
-  font-size: var(--font-size-body);
-  line-height: 1.6;
-  color: var(--color-text-gray);
+#education-section h4 {
+  font-size: clamp(1.2rem, 2vw, 2.4rem); /* Smaller responsive font sizes */
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
-main #about-section p span {
+
+#education-section p span {
   color: var(--color-primary);
+  font-weight: bold;
 }
-main #about-section li {
-  margin: 25px 0px 20px;
+
+#education-section p {
+  font-size: clamp(1rem, 1.3vw, 1.5rem);
   line-height: 1.6;
-  font-size: var(--font-size-body);
-  color: var(--color-text-gray);
+  max-width: 60%;
+  margin: 0 auto 30px; /* Centers text */
 }
-main #about-section li b {
-  color: var(--color-text);
+.education-logos {
+  display: flex;
+  justify-content: center; /* Centers images */
+  align-items: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 40px; /* Adds more space between images */
 }
+
+.education-logos img {
+  max-width: 100px; /* Prevents images from getting too large */
+  height: auto;
+  transition: filter 0.3s ease; /* Adds transition for brightness */
+}
+
+.education-logos img:hover {
+  filter: brightness(150%); /* Makes images brighter on hover */
+}
+
+
 
 /*--------------------------------------------------------------
   # skills section

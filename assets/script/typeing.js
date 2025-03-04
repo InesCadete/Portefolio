@@ -1,16 +1,12 @@
-//TextTyper by @Sohez.
-
 const typingText = document.querySelector("#typing-text");
 const cursorSpan = document.querySelector("#cursor");
 
 const texts = [
   "Problem Solver",
   "Computer Science Enthusiast",
-  "Web Developer",
   "Team Player",
   "Project Developer",
-  "Presentation Specialist",
-  "Management Explorer"
+  "Management-oriented"
 ];
 
 const typingDelay = 100;

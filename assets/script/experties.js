@@ -12,14 +12,7 @@ const ExpertiseData = [
     logo:     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     
   },
-  {
-    name: "HTML",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-  },
-  {
-    name: "CSS",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-  },
+  
   {
     name: "Java",
     logo: "https://cdn-icons-png.flaticon.com/128/5968/5968282.png",
@@ -33,6 +26,14 @@ const ExpertiseData = [
   {
     name: "C++",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+  },
+  {
+    name: "HTML",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+  },
+  {
+    name: "CSS",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
   },
 
   {
