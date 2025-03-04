@@ -135,83 +135,72 @@ header {
     }
   }
 }
+
+
 /*--------------------------------------------------------------
   # MAin,Hero section
   --------------------------------------------------------------*/
-main #hero-section {
+#hero-section {
   min-height: 70svh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
 
-  #hero-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
+#hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensures elements stack vertically */
+  position: relative;
+}
 
-    .small-text{
-      font-size: var(--font-size-small);
-    }
+#ring {
+  border-radius: 50%;
+  outline: 1px solid var(--color-primary);
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s;
+  position: relative; /* Needed for the tooltip to position correctly */
+}
 
-    h1 {
-      text-align: center;
-      filter: drop-shadow(0 1 0.7rem var(--color-primary));
-      span {
-        color: var(--color-primary);
-      }
-    }
-    
-    #typing-text {
-      margin-left: 0.2rem;
-      color: var(--color-text-gray);
-      font-size: var(--font-size-subheading);
-    }
-    #cursor {
-      display: inline-block;
-      background-color: var(--color-text-gray);
-      margin-left: 0.1rem;
-      width: 2px;
-      height: 1.1rem;
-      animation: cursor-blink-animation 0.9s infinite;
-    }
-  }
-  #hero-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#ring:hover {
+  padding: 18px;
+  outline: 4px solid var(--color-primary);
+}
 
-    #ring {
-      border-radius: 50%;
-      outline: 1px solid var(--color-primary);
-      padding: 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.7s;
-      &:hover {
-        padding: 18px;
-        outline: 4px solid var(--color-primary);
-      }
-      /* Extra small devices (phones, <576px) */
-      @media (max-width: 575.98px) {
-        margin-bottom: 25px;
-      }
-    }
-    img {
-      height: 300px;
-      width: 300px;
-      object-fit: cover;
-      border-radius: 50%;
-      -webkit-box-shadow: -1px -1px 64px -13px rgba(0, 0, 0, 0.38);
-      -moz-box-shadow: -1px -1px 64px -13px rgba(0, 0, 0, 0.38);
-      box-shadow: -1px -1px 64px -13px rgba(0, 0, 0, 0.38);
-    }
-    /* Extra small devices (phones, <576px) */
-    @media (max-width: 575.98px) {
-      margin-top: 30px;
-    }
-  }
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  top: calc(100% + 10px); /* Moves below the ring */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Show tooltip on hover */
+#hero-right:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: -1px -1px 64px -13px rgba(0, 0, 0, 0.38);
+}
+
 //////////////////////////////////////////////////////////////
   #about-ring {
     border-radius: 50%;
@@ -239,12 +228,12 @@ main #hero-section {
   }
   //////////////////////////////////////////////////////////////
 
-  /* Extra small devices (phones, <576px) */
-  @media (max-width: 575.98px) {
-    grid-template-columns: 1fr;
-    margin-top: 125px;
-  }
-}
+//   /* Extra small devices (phones, <576px) */
+//   @media (max-width: 575.98px) {
+//     grid-template-columns: 1fr;
+//     margin-top: 125px;
+//   }
+// }
 
 @keyframes cursor-blink-animation {
   0% {
@@ -312,7 +301,7 @@ main #about-section {
     p {
       font-size: var(--font-size-body);
       line-height: 1.6;
-      color: var(--color-text-gray);
+      color: var(--color-text);
       span {
         color: var(--color-primary);
       }
@@ -322,7 +311,7 @@ main #about-section {
       margin: 25px 0px 20px;
       line-height: 1.6;
       font-size: var(--font-size-body);
-      color: var(--color-text-gray);
+      color: var(--color-text);
       b{
         color: var(--color-text);
       }
@@ -361,31 +350,6 @@ main #about-section {
 
   }
 
-  
-  // #about-ring {
-  //   border-radius: 50%;
-  //   outline: 1px solid var(--color-primary); /* Change color */
-  //   padding: 5px; /* Smaller padding */
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   transition: all 0.7s;
-  // }
-  
-  // #about-ring:hover {
-  //   padding: 10px; /* Slightly bigger on hover */
-  //   outline: 3px solid var(--color-primary); /* Thicker on hover */
-  // }
-  
-  // #about-ring img {
-  //   height: 80px; /* Adjust as needed */
-  //   width: 80px;
-  //   object-fit: contain;
-  //   border-radius: 50%;
-  //   -webkit-box-shadow: -1px -1px 40px -10px rgb(255, 0, 247);
-  //   -moz-box-shadow: -1px -1px 40px -10px rgb(255, 0, 247);
-  //   box-shadow: -1px -1px 40px -10px rgb(255, 0, 247);
-  // }
 /*--------------------------------------------------------------
   # skills section
   --------------------------------------------------------------*/
@@ -394,34 +358,33 @@ main #skills-section {
   margin: auto;
   margin-top: 55px;
 
-  h2{
+  h2 {
     font-size: var(--font-size-heading);
   }
   #skills-card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, auto));
     gap: 12px;
-    margin-top: 12px;
+    margin-top: 120px;
     .skills-card {
       width: auto;
-      outline: 1px solid var(--color-primary);
-      border-radius: 12px;
-      padding: 12px 24px;
+      outline: 10px solid var(--color-primary); /* Thicker border */
+      border-radius: 64px; /* More rounded corners */
+      padding: 12px 74px;
       display: flex;
       align-items: center;
       color: var(--color-text-gray);
       transition: all 0.5s;
-      // margin: 24px 0px 24px 0px;
       img {
         height: 60px;
         width: 60px;
       }
       span {
-        margin-left: 12px;
+        margin-left: 72px;
         font-size: var(--font-size-body);
       }
-      &:hover{
-        outline: 2px solid var(--color-primary);
+      &:hover {
+        outline: 33px solid var(--color-primary); /* Thicker border on hover */
         color: var(--color-text);
         cursor: pointer;
       }

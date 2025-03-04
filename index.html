@@ -12,7 +12,7 @@
     <meta name="title" content="Inês Cadete" />
     <meta
       name="description"
-      content="Inês Cadete: a Computer Science student with a passion for problem-solving and crafting smart, real-world solutions"
+      content="Inês Cadete: a Computer Science student with a passion for problem-solving andcrafting smart, real-world solutions"
     />
     <meta
       name="keywords"
@@ -41,12 +41,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#151414" />
     <link
       rel="apple-touch-icon"
-      href="https://avatars.githubusercontent.com/u/57430072?v=4"
+      href="https://cdn-icons-png.flaticon.com/128/17778/17778076.png"
     />
     <link
       rel="icon"
       type="image/x-icon"
-      href="https://avatars.githubusercontent.com/u/57430072?v=4"
+      href="https://cdn-icons-png.flaticon.com/128/17778/17778076.png"
     />
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,13 +67,16 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a title="About" href="#about-section">About</a></li>
-          <li><a title="Skills" href="#skills-section">Skills</a></li>
-          <li><a title="Projects" href="#projects-section">Projects</a></li>
-          <li><a title="Contact" href="#contact-section">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a title="About" href="#about-section">About</a></li>
+        <li><a title="Skills" href="#skills-section">Skills</a></li>
+        <li><a title="Projects" href="#projects-section">Projects</a></li>
+        <li><a title="Contact" href="#contact-section">Contact</a></li>
+        <li><button class="nav-button" onclick="window.open('https://inescadete.github.io/CV/', '_blank')">Checkout my CV</button></li>
+      </ul>
       </nav>
+    </header>
+
     </header>
     <main>
       <section id="hero-section">
@@ -89,8 +92,11 @@
           <div id="ring">
         <a href="https://www.linkedin.com/in/in%C3%AAs-cadete-16360a234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
           <img
+            class="bright-img"
+
             src="images/profile_pic.jpg"
             alt="Inês Cadete"
+
           />
         </a>
           </div>
@@ -109,7 +115,38 @@
           <ul style="list-style: none; padding: 0;">
         <li>
           <section id="learned-section">
-            <h2>-------------------------------------</h2>
+            <h2 id="animated-text">-------------------------------------</h2>
+            
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const textElement = document.getElementById("animated-text");
+                const text = textElement.textContent;
+                textElement.textContent = "";
+                let index = 0;
+
+                // Function to start the typing animation
+                function typeCharacter() {
+                  if (index < text.length) {
+                    textElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeCharacter, 200); // Delay between each character
+                  }
+                }
+
+                // Function to check if the section is in view (on scroll)
+                function checkIfInView() {
+                  const rect = textElement.getBoundingClientRect();
+                  if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                    // Start typing animation when section is in view
+                    typeCharacter();
+                    window.removeEventListener("scroll", checkIfInView); // Remove the scroll listener after animation starts
+                  }
+                }
+
+                // Add scroll event listener
+                window.addEventListener("scroll", checkIfInView);
+              });
+            </script>
 
           <h2>Where I learned</h2>
           <h3 style="margin-bottom: 20px;">->  Computer Science  <-</h3>
@@ -122,12 +159,9 @@
 
 
             <a href="https://fenix.tecnico.ulisboa.pt/cursos/leic-t" target="_blank">
-              <img src="images/ist_logo.png" alt="IST Logo" style="width: 10%; margin-left: 2cm;" />
+              <img class="bright-img" src="images/ist_logo.png" alt="IST Logo" style="width: 10%; margin-left: 0.1cm;" />
           </a>
 
-
-
-            <!-- <div class="social-links"> -->
             </section>
 
           <div id="about-ring">
@@ -139,10 +173,10 @@
             <h3 style="margin-bottom: 15px; margin-top: 30px;">->  Business and Management  <-</h3>
           <div class="education-section">
         <a href="https://www.iscte-iul.pt/curso/codigo/0391/licenciatura-tecnologias-digitais-gestao" target="_blank">
-          <img src="images/iscte_logo.png" alt="ISCTE Logo" style="width: 15%;" />
+          <img class="bright-img" src="images/iscte_logo.png" alt="ISCTE Logo" style="width: 15%;" />
         </a>
         <a href="https://www.aese.pt/aese-summer-school/" target="_blank">
-          <img src="images/aese_logo.png" alt="AESE Logo" style="width: 15%; margin-left: 10px;" />
+          <img class="bright-img" src="images/aese_logo.png" alt="AESE Logo" style="width: 15%; margin-left: 10px;" />
         </a>
         <p style="margin-bottom: 30px; margin-top: 20px;">
           Contents learned about management in ISCTE-Sintra were tested in practice in the analysis and teamwork business case solving in AESE, using the Harvard Business case model.
@@ -155,13 +189,13 @@
           
       </section>
       <section id="skills-section">
-        <h2>Skills</h2>
+        <h2 style="margin-bottom: 30px;">Skills</h2>
         <div id="skills-card-container">
           <!-- code from dynamically ./assets/script/experties.js -->
         </div>
       </section>
       <section id="projects-section">
-        <h2>Projects</h2>
+        <h2 style="margin-bottom: 30px;" >Projects</h2>
         <div id="projects-card-container">
           <!-- code from dynamically ./assets/script/projects.js -->
         </div>

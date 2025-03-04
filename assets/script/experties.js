@@ -21,6 +21,12 @@ const ExpertiseData = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
   },
   {
+    name: "Java",
+    logo: "https://cdn-icons-png.flaticon.com/128/5968/5968282.png",
+  
+  },
+
+  {
     name: "C",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
   },
@@ -28,10 +34,28 @@ const ExpertiseData = [
     name: "C++",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
   },
+
+  {
+    name: "R",
+    logo: "  https://cdn-icons-png.flaticon.com/128/2103/2103665.png",
+  
+  },
   {
     name: "PostgreSQL",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
   },
+
+  {
+    name: "Assembly",
+    logo: "  https://user-images.githubusercontent.com/103866722/194773833-8571f323-4fa8-4036-a51c-57b9d29c683b.svg",
+  },
+
+  {
+    name: "Prolog",
+    logo: "  https://static-00.iconduck.com/assets.00/file-type-prolog-icon-2048x2048-3vfnh6jh.png",
+  },
+
+
   {
     name: "Linux",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",

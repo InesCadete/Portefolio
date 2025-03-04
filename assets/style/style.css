@@ -110,6 +110,110 @@ header nav ul li a:hover {
   border-color: var(--color-primary);
 }
 
+
+/*-----------------------------------------------------------
+  # nav section
+  /*-----------------------------------------------------------*/
+  .nav-button {
+    min-width: 200px; /* 1.5 times smaller */
+    min-height: 40px; /* 1.5 times smaller */
+    display: inline-flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14.67px; /* 1.5 times smaller */
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 8px 8px 16px rgba(79,209,197,.64); /* 1.5 times smaller */
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .nav-button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(200px + 8px); /* 1.5 times smaller */
+    min-height: calc(40px + 8px); /* 1.5 times smaller */
+    border: 4px solid #00FFCB; /* 1.5 times smaller */
+    box-shadow: 0 0 40px rgba(0,255,203,.64); /* 1.5 times smaller */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .nav-button:hover, 
+  .nav-button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .nav-button:hover::before, 
+  .nav-button:focus::before {
+    opacity: 1;
+  }
+  
+  .nav-button::after {
+    content: '';
+    width: 20px; /* 1.5 times smaller */
+    height: 20px; /* 1.5 times smaller */
+    border-radius: 100%;
+    border: 2.67px solid #00FFCB; /* 1.5 times smaller */
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .nav-button:hover::after, 
+  .nav-button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 6.67px; /* 1.5 times smaller */
+      height: 6.67px; /* 1.5 times smaller */
+      opacity: 1;
+    }
+    100% {
+      width: 50px; /* 1.5 times smaller */
+      height: 50px; /* 1.5 times smaller */
+      opacity: 0;
+    }
+  }
+  
+/*************************************************************
+make picture bigger and brighter on hover
+*************************************************************/
+.bright-img {
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transition for both scale and brightness */
+  width: 100%; /* You can adjust the width if needed */
+  max-width: 300px; /* You can set a max-width if you want the image to have a max size */
+}
+
+.bright-img:hover {
+  filter: brightness(120%); /* Twice as bright */
+  transform: scale(1.06); /* Scale to 110% (a bit bigger) */
+}
+
+
+
 /*--------------------------------------------------------------
   # MAin,Hero section
   --------------------------------------------------------------*/
