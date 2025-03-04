@@ -15,5 +15,11 @@
 - 🎨 **Multiple Theme Colors** – Customize to match your style.
 - ⚡ **Fast Loading** – Optimized for speed.
 
+## Acknowledgment
+
+This project is based on a template created by [Sayyed Sohel](https://github.com/sohez/sohez.github.io). While modifications and additions have been made, the original structure and base design come from this template. 
+
+The original template is licensed under the MIT License.
+
 ## **📬 Contact**
 ines.cadete@tecnico.ulisboa.pt
