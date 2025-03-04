@@ -1,7 +1,7 @@
 # 🎨 **INÊS CADETE Portfolio**
 
 ## **Overview**
-📂 **Portfolio Website** built using **HTML, CSS, JS**.
+📂 **Portfolio Website** built using **HTML, CSS (SCSS), JS**.
 
 ---
 
