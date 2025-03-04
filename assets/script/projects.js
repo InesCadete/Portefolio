@@ -1,46 +1,50 @@
 const ProjectsData = [
   {
     name: "Excel Clone-logic",
-    logo: "https://play-lh.googleusercontent.com/au3QvRNWZiRamIYLRb0irFPno-xuzSJDzrL1Te0vGx7889ROiOp3Sr7dIByGomFDJpbX=w480-h960-rw",
+    logo: "https://cdn-icons-png.flaticon.com/128/732/732220.png",
+
     description:
   
-    "using a grid of cells that can represent values for mathematical expressions. implemented the Observer Design pattern, which made it possible for cells to update when changes were made to cells that influenced the result." ,
+    "Java backend logic using a grid of cells which represent updatable values for mathematical expressions." ,
       link: "https://github.com/InesCadete/Computer-Science-IST/tree/main/PO",
   },
   {
-    name: "Student Portal App",
-    logo: "https://cdn-icons-png.flaticon.com/128/14664/14664511.png",
+    name: "Multiple Subscription Key-Value Store",
+    logo: "https://cdn-icons-png.flaticon.com/128/3997/3997718.png",
+
+
     description:
-      "Student Portal App, build using kotlin.",
-    link: "https://github.com/sohez/StudentPortalApp",
+    "IST-KVS: A parallellized key-value storage system with client-server communication, developed in C.",
+    link: "https://github.com/InesCadete/Computer-Science-IST/tree/main/SO/projeto_2",
   },
   {
-    name: "M.P.C",
-    logo: "https://cdn-icons-png.flaticon.com/128/1011/1011812.png",
+    name: "Typing Website",
+    logo: "images/final_logo.png",
     description:
-      "powerful and easy-to-use solution for calculating academic performance. Built with HTML, CSS, JavaScript, html2canvas, and jsPDF.",
-    link: "https://sohez.github.io/Marks-Percentage-Calculator/",
+    "Minimalist typing website. Built using HTML, CSS, and JavaScript",
+        link: "https://inescadete.github.io/NesTypes/",
   },
   {
-    name: "PHP Registration full API",
-    logo: "https://cdn-icons-png.flaticon.com/128/17335/17335144.png",
+    
+    name: "Public Transportation Management System",
+    logo: "https://cdn-icons-png.flaticon.com/128/1068/1068631.png",
     description:
-      "Registration full API PHP and MySql.",
-    link: "https://github.com/sohez/PHP-Projects",
+      "System that manages lines, stops, and links using dynamic structures and advanced memory management",
+    link: "https://github.com/InesCadete/Computer-Science-IST/tree/main/IAED/projetos",
   },
   {
-    name: "Tic-Tac-Toe",
-    logo: "https://cdn-icons-png.flaticon.com/128/434/434798.png",
+    name: "Optimal Sheet Cutting",
+    logo: "https://cdn-icons-png.flaticon.com/128/2162/2162348.png",
     description:
-      "play against a bot using the Minimax algorithm or with a friend. This game is built with HTML, CSS, and JS.",
-    link: "https://sohez.github.io/tic-tac-toe/",
+      "Maximizes the price of an M x N sheet by using dynamic programming and tabulation",
+    link: "https://github.com/InesCadete/Computer-Science-IST/tree/main/ASA/proj1",
   },
   {
-    name: "AI Chat",
-    logo: "https://cdn-icons-png.flaticon.com/128/6873/6873405.png",
+    name: "Much More",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' viewBox='0 0 128 128'%3E%3Cpath d='M64 16v96M16 64h96' stroke='%23fff' stroke-width='12' stroke-linecap='round'/%3E%3C/svg%3E",
     description:
-      "Gemini AI chat bot, this is built with HTML, CSS, and JS.",
-    link: "https://github.com/sohez/ai-chat",
+      "Explore my Computer Science repository",
+    link: "https://github.com/InesCadete/Computer-Science-IST",
   }
 ];
 
